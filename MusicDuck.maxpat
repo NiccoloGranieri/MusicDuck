@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 0.0, 53.0, 376.0, 310.0 ],
+		"rect" : [ 321.0, 206.0, 375.0, 357.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,74 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-21",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 443.0, 198.0, 50.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 217.0, 179.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-19",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 443.0, 168.0, 90.0, 22.0 ],
+					"text" : "loadmess 5000"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-15",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 172.0, 155.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 107.916228999999987, 179.0, 160.0, 20.0 ],
+					"text" : "Release time (ms):"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"items" : [ "None", ",", "Core Audio", ",", "NonRealTime", ",", "ad_portaudio", "Core Audio", ",", "ad_rewire" ],
+					"maxclass" : "umenu",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "int", "", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 186.0, 507.800933999999984, 194.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 90.916228999999987, 287.800933999999984, 194.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-31",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "int" ],
+					"patching_rect" : [ 186.0, 482.400466999999992, 96.0, 23.0 ],
+					"text" : "adstatus driver"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-5",
 					"maxclass" : "newobj",
@@ -145,15 +213,15 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-10",
-					"items" : [ "None", ",", "BlackHole 16ch", ",", "External Headphones", ",", "MacBook Pro Speakers", ",", "Camo Microphone", ",", "Microsoft Teams Audio" ],
+					"items" : [ "None", ",", "PLE2483H", ",", "BlackHole 16ch", ",", "External Headphones", ",", "MacBook Pro Speakers", ",", "Camo Microphone", ",", "Microsoft Teams Audio" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 306.0, 526.09368900000004, 156.667541999999997, 22.0 ],
+					"patching_rect" : [ 307.0, 559.09368900000004, 156.667541999999997, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 211.0, 274.292725000000019, 156.667541999999997, 22.0 ]
+					"presentation_rect" : [ 211.0, 318.292725000000019, 156.667541999999997, 22.0 ]
 				}
 
 			}
@@ -166,7 +234,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "int" ],
-					"patching_rect" : [ 306.0, 500.693207000000029, 110.0, 23.0 ],
+					"patching_rect" : [ 307.0, 533.693207000000029, 110.0, 23.0 ],
 					"text" : "adstatus option 1"
 				}
 
@@ -180,9 +248,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 75.0, 526.09368900000004, 156.667541999999997, 22.0 ],
+					"patching_rect" : [ 76.0, 559.09368900000004, 156.667541999999997, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 7.916229000000001, 274.292725000000019, 156.667541999999997, 22.0 ]
+					"presentation_rect" : [ 7.916229000000001, 318.292725000000019, 156.667541999999997, 22.0 ]
 				}
 
 			}
@@ -195,7 +263,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "int" ],
-					"patching_rect" : [ 75.0, 500.693207000000029, 110.0, 23.0 ],
+					"patching_rect" : [ 76.0, 533.693207000000029, 110.0, 23.0 ],
 					"text" : "adstatus option 0"
 				}
 
@@ -567,7 +635,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-12", 0 ],
-					"midpoints" : [ 315.5, 551.494141000000013, 297.251948999999968, 551.494141000000013, 297.251948999999968, 496.074936000000037, 315.5, 496.074936000000037 ],
+					"midpoints" : [ 316.5, 584.4941409999999, 298.251948999999968, 584.4941409999999, 298.251948999999968, 529.07493599999998, 316.5, 529.07493599999998 ],
 					"source" : [ "obj-10", 0 ]
 				}
 
@@ -588,8 +656,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-21", 0 ],
+					"source" : [ "obj-19", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-8", 0 ],
 					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-22", 1 ],
+					"source" : [ "obj-21", 0 ]
 				}
 
 			}
@@ -642,6 +724,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"source" : [ "obj-31", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-35", 0 ],
 					"source" : [ "obj-32", 0 ]
 				}
@@ -665,7 +754,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-38", 0 ],
-					"midpoints" : [ 84.5, 551.494141000000013, 66.251948999999996, 551.494141000000013, 66.251948999999996, 496.07493599999998, 84.5, 496.07493599999998 ],
+					"midpoints" : [ 85.5, 584.4941409999999, 67.251948999999996, 584.4941409999999, 67.251948999999996, 529.07493599999998, 85.5, 529.07493599999998 ],
 					"source" : [ "obj-36", 0 ]
 				}
 
@@ -829,6 +918,14 @@
 					"destination" : [ "obj-49", 1 ],
 					"order" : 1,
 					"source" : [ "obj-59", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-31", 0 ],
+					"midpoints" : [ 195.5, 539.892272999999932, 176.15844100000001, 539.892272999999932, 176.15844100000001, 477.782195999999999, 195.5, 477.782195999999999 ],
+					"source" : [ "obj-6", 0 ]
 				}
 
 			}
